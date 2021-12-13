@@ -3,3 +3,51 @@
 *{
     box-sizing: border-box;
 }
+
+html, body{
+    min-height: 100%;
+    margin: 0;
+}
+
+/* main nav bar */
+.main-nav{
+    padding: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    position: fixed;
+    overflow-y: auto;
+    transition: width 0.3s ease;
+    background-color: aqua;
+}
+
+    .main-nav a{
+        display: block;
+        padding: 15px;
+        background: aqua;
+        color: white;
+    }
+    
+    .main-nav a :hover{
+        color: white;
+        background: turquoise;
+    }
+
+    .main-nav a :after{
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 34px;
+    }
+
+/* main header */
+ .main-header{
+     position: fixed;
+     padding: 5px;
+     left: 0;
+     width: 100%;
+     z-index: 2;
+    transition: all 0.3s ease;
+ }
