@@ -3,3 +3,96 @@
 *{
     box-sizing: border-box;
 }
+
+html, body{
+    min-height: 100%;
+    background: whitesmoke;
+    margin: 0;
+}
+
+a{text-decoration: none;}
+
+/* main nav bar */
+.main-nav{
+    padding: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    position: fixed;
+    overflow-y: auto;
+    transition: width 0.3s ease;
+    background-color: aqua;
+}
+
+    .main-nav a{
+        display: block;
+        padding: 15px;
+        background: aqua;
+        color: white;
+    }
+    
+    .main-nav a:hover{
+        color: white;
+        background: turquoise;
+    }
+
+    .main-nav a &:after{
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 34px;
+        background: aqua;
+    }
+
+/* main header */
+.main-header{
+    position: fixed;
+    padding: 5px;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    transition: all 0.3s ease;
+    background: blue;
+ }
+    .main-header a{
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        font-size: 32px;
+        color: white;
+    }
+
+.page-wrap{
+    float: right;
+    width: 100%;
+    transition: width 0.3s ease;
+}
+
+.content{
+    padding: 100px 10px 10px 10px;
+}
+
+.close-menu{
+    display: none;
+}
+
+#main-nav:target{
+    width: 20%;
+}
+
+#main-nav:target + .page-wrap{width: 80%;}
+
+    #main-nav:target + .page-wrap .open-menu{
+        display: none;
+    }
+
+    #main-nav:target + .page-wrap .close-menu{
+        display: block;
+    }
+
+    #main-nav:target + .page-wrap .main-header{
+        width: 80%;
+        left: 20%;
+    }
