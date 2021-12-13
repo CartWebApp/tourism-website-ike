@@ -96,3 +96,14 @@ a{text-decoration: none;}
         width: 80%;
         left: 20%;
     }
+
+.footer {
+    display: flex;
+    justify-content: center;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: #F1FAEE;
+    text-align: center;
+    background: #142742;
+}
