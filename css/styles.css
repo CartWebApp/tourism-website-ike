@@ -5,6 +5,8 @@ font-family: 'Poppins', sans-serif; */
 
 *{
     box-sizing: border-box;
+    scrollbar-color: transparent transparent;
+    scrollbar-width: 0px;
 }
 
 html {
@@ -163,6 +165,140 @@ a{text-decoration: none;}
     }
 }
 
+body{
+    max-width: 37.5rem;
+    margin: 0 auto;
+    padding: 0 1.25rem;
+    font-family: 'lato', comic-sans;
+}
+
+*{
+    box-sizing: border-box;
+    scrollbar-color: transparent transparent;
+    scrollbar-width: 0px;
+} 
+
+*::-webkit-scrollbar{
+    width: 0;
+}
+
+*::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+*::-webkit-scrollbar-thumb{
+    background: transparent;
+    border: none;
+}
+
+*{
+    -ms-overflow-style: none;
+}
+
+ol, li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.carousel{
+    position: relative;
+    padding-top: 75%;
+    filter: drop-shadow(0 0 10px #0003);
+    perspective: 100px;
+}
+
+.carousel_viewport{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    overflow-x: scroll;
+    counter-reset: item;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+}
+
+.carousel_slide{
+    position: relative;
+    flex: 0 0 100%;
+    width: 100%;
+    background-color: #f99;
+    counter-increment: item;
+}
+
+.carousel_slide:nth-child(even) {
+    background-color: #99f;
+}
+
+.carousel_slide:before{
+    content: counter(item);
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate3d(-50%, -40%, 70px);
+    color:#fff;
+    font-size: 2em;
+}
+
+.carousel_snapper{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    scroll-snap-align: center;
+}
+
+@media (hover: hover){
+    .carousel_snapper {
+        animation-name: tonext, snap;
+        animation-timing-function: ease;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+    }
+
+    .carousel_slide:last-child .carousel_snapper{
+        animation-name: tostart, snap;
+    }
+}
+
+@media(perfers-reduced-motion: reduce){
+    .carousel_snapper{
+        animation-name: none;
+    }
+}
+
+.carousel:hover .carousel_snapper, .carousel:focus-within .carousel_snapper{
+    animation-name: none;
+}
+
+.carousel_navgation{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+}
+
+.carousel_navgation-list, .carousel_navgation-item{
+    display: inline-block;
+}
+
+.carousel_navgation-button{
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: #333;
+    background-clip: content-box;
+    border: 0.25rem solid transparent;
+    border-radius: 50%;
+    font-size: 0;
+    transition: transform 0.1s;
+}
+
 .cabutton {
     align-items: center;
     background-color: rgb(255, 0, 0);
@@ -179,6 +315,7 @@ a{text-decoration: none;}
     color: #fff;
 }
 
+/* HIDDEN UNTIL WIDTHS ARE DETERMINED. /*
 .row {
     max-width: 1280px;
     margin: 0 auto;
@@ -193,23 +330,23 @@ a{text-decoration: none;}
 }
 
 .quarters article{
-    width: 23%;
+    width: 100%;
 }
 
 .thirds article{
-    width: 30%;
+    width: 100%;
 }
 
 .twothirds article:first-child{
-    width: 64%;
+    width: 100%;
 }
 
 .twothirds article:last-child{
-    width: 32%;
+    width: 100%;
 }
 
 .halves article{
-    width: 48%;
+    width: 100%;
 }
 
 .cards article h2,
