@@ -20,7 +20,7 @@ html, body{
 
 a{text-decoration: none;}
 
-/* main nav bar *
+/* main nav bar*
 .main-nav{
     padding: 0;
     top: 0;
@@ -118,6 +118,51 @@ a{text-decoration: none;}
     background: #8396b1;
     }
 
+@keyframes tonext{
+    75%{
+        left: 0;
+    }
+    95%{
+        left: 100%;
+    }
+    98%{
+        left: 100%;
+    }
+    99% {
+        left: 0;
+    }
+}
+
+@keyframes tostart{
+    75%{
+        left: 0;
+    }
+    95%{
+        left: -300%;
+    }
+    98%{
+        left: -300%;
+    }
+    99%{
+        left: 0;
+    }
+}
+
+@keyframes snap{
+    96%{
+        scroll-snap-align: center;
+    }    
+    97%{
+        scroll-snap-align: none;
+    }
+    99%{
+        scroll-snap-align: none;
+    }
+    100%{
+        scroll-snap-align: center;
+    }
+}
+
 .cabutton {
     align-items: center;
     background-color: rgb(255, 0, 0);
@@ -132,4 +177,53 @@ a{text-decoration: none;}
 .cabutton a {
     text-decoration: none;
     color: #fff;
+}
+
+.row {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+    margin-top: 2em;
+}
+
+.row.full{
+    width: 100vw;
+}
+
+.quarters article{
+    width: 23%;
+}
+
+.thirds article{
+    width: 30%;
+}
+
+.twothirds article:first-child{
+    width: 64%;
+}
+
+.twothirds article:last-child{
+    width: 32%;
+}
+
+.halves article{
+    width: 48%;
+}
+
+.cards article h2,
+.cards article h3,
+.cards article p,
+.card h2,
+.card h3, 
+.card p{
+    padding: 0 1rem;
+}
+
+.cards article a,
+.card a{
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    float: right;
 }
