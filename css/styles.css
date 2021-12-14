@@ -20,7 +20,7 @@ html, body{
 
 a{text-decoration: none;}
 
-/* main nav bar */
+/* main nav bar *
 .main-nav{
     padding: 0;
     top: 0;
@@ -54,7 +54,7 @@ a{text-decoration: none;}
         background: aqua;
     }
 
-/* main header */
+/* main header *
 .main-header{
     position: fixed;
     padding: 5px;
@@ -105,7 +105,7 @@ a{text-decoration: none;}
     #main-nav:target + .page-wrap .main-header{
         width: 80%;
         left: 20%;
-    }
+    }*/
 
  .footer {
     display: flex;
