@@ -171,7 +171,7 @@ body{
     max-width: 37.5rem;
     margin: 0 auto;
     padding: 0 1.25rem;
-    font-family: 'lato', sa;
+    font-family: 'lato', sans-serif;
 }
 
 *{
@@ -277,6 +277,7 @@ ol, li{
     animation-name: none;
 }
 
+
 .carousel_navgation{
     position: absolute;
     right: 0;
@@ -287,6 +288,7 @@ ol, li{
 
 .carousel_navgation-list, .carousel_navgation-item{
     display: inline-block;
+    
 }
 
 .carousel_navgation-button{
