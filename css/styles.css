@@ -24,7 +24,6 @@ a { text-decoration: none; }
     width: 0;
     background-color: #C21E56;
     position: fixed;
-    flex-wrap:wrap ;
     height: 100%;
     overflow-y: auto;
     transition: width 0.3s ease;
@@ -38,7 +37,7 @@ a { text-decoration: none; }
         padding: 15px;
     }
     .main-nav a:hover {
-        background: #157599;
+        background: #f18296;
         color: white;
         }
 
@@ -326,6 +325,10 @@ ol, li {
 
 .carousel::after {
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='100,50 20,100 20,0' fill='%23fff'/%3E%3C/svg%3E");
+}
+
+.imG{
+    width: 100%;
 }
 
 .cabutton {
