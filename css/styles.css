@@ -329,7 +329,16 @@ ol, li {
 
 .imG{
     width: 100%;
+    height: 100%;
 }
+
+.header-img{
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    margin-bottom: 25rem;
+}
+
 
 .cabutton {
     align-items: center;
