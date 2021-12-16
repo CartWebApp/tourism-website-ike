@@ -11,7 +11,7 @@ font-family: 'Poppins', sans-serif; */
 
 html, body {
     min-height: 100%; 
-    background: linear-gradient(#F1FAEE, #A8DADC);
+    background: #F5F5F5;
     margin: 0;
 }
 
@@ -22,7 +22,7 @@ a { text-decoration: none; }
     padding: 0;
     top: 0;
     width: 0;
-    background-color: #1E385C;
+    background-color: #C21E56;
     position: fixed;
     flex-wrap:wrap ;
     height: 100%;
@@ -31,9 +31,9 @@ a { text-decoration: none; }
 }
     .main-nav a {
         display: block;
-        background: #294B7A;
-        border-top: 1px solid #254064;
-        border-bottom: 1px solid #183050;
+        background: #E2657C;
+        border-top: 1px solid #C21E56;
+        border-bottom: 1px solid #aa1b4a;
         color: white;
         padding: 15px;
     }
@@ -62,7 +62,7 @@ a { text-decoration: none; }
     width: 100%;
     transition: all 0.3s ease;
     text-align: center;
-    background:#142742;
+    background: #A71C4B;
     color: #F1FAEE;
 }
     .main-header a {
@@ -105,7 +105,7 @@ a { text-decoration: none; }
     width: 100%;
     color: #F1FAEE;
     text-align: center;
-    background: #142742;
+    background: #A71C4B;
 }
 
 @keyframes tonext {
