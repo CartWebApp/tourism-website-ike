@@ -52,7 +52,6 @@ body, html {
 
 iframe{
     margin-top: 5rem;
-    margin-left: 35%;
 }
 
 .imG{
@@ -191,7 +190,7 @@ iframe{
     
     iframe{
         margin-top: 1rem;
-        max-height: 20%;
+        max-width: 100%;
     }
     
     .imG{
