@@ -47,6 +47,7 @@ body, html {
     color: #F1FAEE;
     text-align: center;
     background: #A71C4B;
+    margin-block-start: 10rem;
 }
 
 iframe{
@@ -182,10 +183,6 @@ iframe{
     
     .footer {
         display: flex;
-        justify-content: center;
-        align-items: flex-end;
-        left: 0;
-        bottom: 0;
         width: 100%;
         color: #F1FAEE;
         text-align: center;
@@ -194,6 +191,7 @@ iframe{
     
     iframe{
         margin-top: 1rem;
+        max-height: 20%;
     }
     
     .imG{
@@ -242,7 +240,7 @@ iframe{
         max-width: 1280px;
         margin: 0 auto;
         display: flex;
-        flex-direction: row; 
+        flex-direction: column; 
         justify-content: space-between;
         margin-top: 2em;
     }
@@ -331,6 +329,7 @@ iframe{
         color: #F1FAEE;
         text-align: center;
         background: #A71C4B;
+        margin-block-start: 28rem;
     }
     
     iframe{
