@@ -50,6 +50,7 @@ body, html {
 
 iframe{
     margin-top: 5rem;
+    margin-left: 35%;
 }
 
 .imG{
@@ -143,7 +144,8 @@ iframe{
     margin-bottom: 1rem;
 }
 
-@media screen and (max-width: 1024px){
+
+@media screen and (max-width: 768px){
     body, html {
         font-family: Arial, Helvetica, sans-serif;
       }
@@ -283,7 +285,7 @@ iframe{
     }
 }
 
-@media screen and (max-width: 640px){
+@media screen and (max-width: 480px){
     body, html {
         font-family: Arial, Helvetica, sans-serif;
       }
@@ -330,6 +332,8 @@ iframe{
     
     iframe{
         margin-top: 1rem;
+        max-width: fit-content;
+        max-height: fit-content;
     }
     
     .imG{
